@@ -17,7 +17,7 @@ class CalendarAPIUtils {
 
         // Your Client ID and API key can be retrieved from your project in the Google
         // Developer Console, https://console.developers.google.com
-        this.client_id = '737977399720-tj5tl7jvqmt5jh3kp72j02i62uetlkkn.apps.googleusercontent.com';
+        this.client_id = '576499236319-438cg0cliltb3qcu8nrn2mrers6eobh2.apps.googleusercontent.com';
         this.scopes = ["https://www.googleapis.com/auth/calendar.readonly"];
     }
 
@@ -98,6 +98,7 @@ class CalendarAPIUtils {
 
     /* Handle the google API authorization response */
     handleCalendarAuthResult(authResult) {
+        console.log(authResult);
 
         if (authResult && !authResult.error) {
             //  Indicate that the auth check is complete:

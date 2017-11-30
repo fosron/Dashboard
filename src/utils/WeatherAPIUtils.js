@@ -77,7 +77,7 @@ class WeatherAPIUtils {
     getCurrentYahooWeather(latitude, longitude) {
 
         //  Format the yahoo url
-        let url = `https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (SELECT woeid FROM geo.places WHERE text="(${latitude},${longitude})")&format=json&env=store://datatables.org/alltableswithkeys`
+        let url = `https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (SELECT woeid FROM geo.places WHERE text="(${latitude},${longitude})") and u='c'&format=json&env=store://datatables.org/alltableswithkeys`
         let weatherUtils = this;
 
         fetch(url, { mode: 'cors' })

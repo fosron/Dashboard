@@ -69,6 +69,11 @@ class DashboardSettings extends Component {
     }
     */
 
+      let authButton = {};
+      if (this.state.auth_check_complete && !this.state.authorized) {
+          authButton = <button className="btn btn-default" onClick={this.handleAuth}>Authorize</button>;
+      }
+
     return (
       <div className="container">
         <h1>Dashboard settings</h1>
@@ -83,9 +88,7 @@ class DashboardSettings extends Component {
                     return <option key={cal.id} value={cal.id}>{cal.summary}</option>;
                   })}
                 </select>
-
-                
-
+                <button className="btn btn-default" onClick={this.handleAuth}>Authorize</button>
               </div>
 
               <div className="form-group">

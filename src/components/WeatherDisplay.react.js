@@ -97,9 +97,9 @@ class WeatherDisplay extends Component {
         <div className="dashboard-status">{this.props.locationname} / {formattedStatus} <a href='/#/settings'>Settings</a></div>
         <WeatherForecast forecastdays={forecastdays} />
 
-        <div id="pollen-summary">
-          Predominant pollen: {pollenSummary}
-        </div>
+        {/*<div id="pollen-summary">*/}
+          {/*Predominant pollen: {pollenSummary}*/}
+        {/*</div>*/}
 
         <WeatherAlerts alerts={alerts} />
 

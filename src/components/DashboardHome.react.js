@@ -108,7 +108,7 @@ class DashboardHome extends Component {
 
                         <div className="col">
                             <WeatherDisplay weather={this.state.weather} updated={this.state.weatherupdated} pollen={this.state.pollen} locationname={this.state.location_name} />
-                            <QuakeDisplay quakes={this.state.quakes} />
+                            {/*<QuakeDisplay quakes={this.state.quakes} />*/}
                         </div>
 
                         <div className="col">
