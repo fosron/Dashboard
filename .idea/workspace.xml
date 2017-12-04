@@ -1,67 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d999fd0b-5dd6-4a1c-821b-8ec5c93c7a9a" name="Default" comment="Added docker-compose&#10;Various changes for the app&#10;TODO:&#10;Move node app to nginx&#10;Move twitter thing to nginx proxy">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twitter-breaking-news" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitmodules" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/dashboard/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/dashboard/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/dashboard/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/circle.yml" afterPath="$PROJECT_DIR$/dashboard/circle.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard.cagedtornado.com.png" afterPath="$PROJECT_DIR$/dashboard/dashboard.cagedtornado.com.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/dashboard/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/dashboard/public/favicon.ico" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/dashboard/public/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/manifest.json" afterPath="$PROJECT_DIR$/dashboard/public/manifest.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/App.css" afterPath="$PROJECT_DIR$/dashboard/src/App.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/dashboard/src/App.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/App.test.js" afterPath="$PROJECT_DIR$/dashboard/src/App.test.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/actions/CalendarActions.js" afterPath="$PROJECT_DIR$/dashboard/src/actions/CalendarActions.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/actions/DashboardConstants.js" afterPath="$PROJECT_DIR$/dashboard/src/actions/DashboardConstants.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/actions/LocationActions.js" afterPath="$PROJECT_DIR$/dashboard/src/actions/LocationActions.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/actions/NewsActions.js" afterPath="$PROJECT_DIR$/dashboard/src/actions/NewsActions.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/actions/QuakeActions.js" afterPath="$PROJECT_DIR$/dashboard/src/actions/QuakeActions.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/actions/SettingsActions.js" afterPath="$PROJECT_DIR$/dashboard/src/actions/SettingsActions.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/actions/WeatherActions.js" afterPath="$PROJECT_DIR$/dashboard/src/actions/WeatherActions.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/CalendarDisplay.react.js" afterPath="$PROJECT_DIR$/dashboard/src/components/CalendarDisplay.react.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/CalendarEventItem.react.js" afterPath="$PROJECT_DIR$/dashboard/src/components/CalendarEventItem.react.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/CalendarEventMoreInfo.react.js" afterPath="$PROJECT_DIR$/dashboard/src/components/CalendarEventMoreInfo.react.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/DashboardHome.react.js" afterPath="$PROJECT_DIR$/dashboard/src/components/DashboardHome.react.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/DashboardSettings.react.js" afterPath="$PROJECT_DIR$/dashboard/src/components/DashboardSettings.react.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/DateTimeDisplay.react.js" afterPath="$PROJECT_DIR$/dashboard/src/components/DateTimeDisplay.react.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/MoonPhaseIcon.react.js" afterPath="$PROJECT_DIR$/dashboard/src/components/MoonPhaseIcon.react.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/NewsDisplay.react.js" afterPath="$PROJECT_DIR$/dashboard/src/components/NewsDisplay.react.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/NotFound.js" afterPath="$PROJECT_DIR$/dashboard/src/components/NotFound.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/QuakeDisplay.js" afterPath="$PROJECT_DIR$/dashboard/src/components/QuakeDisplay.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/WeatherAlerts.react.js" afterPath="$PROJECT_DIR$/dashboard/src/components/WeatherAlerts.react.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/WeatherDisplay.react.js" afterPath="$PROJECT_DIR$/dashboard/src/components/WeatherDisplay.react.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/WeatherForecast.react.js" afterPath="$PROJECT_DIR$/dashboard/src/components/WeatherForecast.react.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/WeatherForecastDay.react.js" afterPath="$PROJECT_DIR$/dashboard/src/components/WeatherForecastDay.react.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/WeatherForecastDaySummary.react.js" afterPath="$PROJECT_DIR$/dashboard/src/components/WeatherForecastDaySummary.react.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/WeatherForecastIcon.react.js" afterPath="$PROJECT_DIR$/dashboard/src/components/WeatherForecastIcon.react.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/WeatherForecastTemp.react.js" afterPath="$PROJECT_DIR$/dashboard/src/components/WeatherForecastTemp.react.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/WeatherTempPixel.react.js" afterPath="$PROJECT_DIR$/dashboard/src/components/WeatherTempPixel.react.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dispatcher/AppDispatcher.js" afterPath="$PROJECT_DIR$/dashboard/src/dispatcher/AppDispatcher.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/dashboard/src/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/logo.svg" afterPath="$PROJECT_DIR$/dashboard/src/logo.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/registerServiceWorker.js" afterPath="$PROJECT_DIR$/dashboard/src/registerServiceWorker.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stores/CalendarStore.js" afterPath="$PROJECT_DIR$/dashboard/src/stores/CalendarStore.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stores/LocationInfoStore.js" afterPath="$PROJECT_DIR$/dashboard/src/stores/LocationInfoStore.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stores/NewsStore.js" afterPath="$PROJECT_DIR$/dashboard/src/stores/NewsStore.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stores/QuakeStore.js" afterPath="$PROJECT_DIR$/dashboard/src/stores/QuakeStore.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stores/SettingsStore.js" afterPath="$PROJECT_DIR$/dashboard/src/stores/SettingsStore.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stores/WeatherStore.js" afterPath="$PROJECT_DIR$/dashboard/src/stores/WeatherStore.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/utils/CalendarAPIUtils.js" afterPath="$PROJECT_DIR$/dashboard/src/utils/CalendarAPIUtils.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/utils/LocationAPIUtils.js" afterPath="$PROJECT_DIR$/dashboard/src/utils/LocationAPIUtils.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/utils/NewsAPIUtils.js" afterPath="$PROJECT_DIR$/dashboard/src/utils/NewsAPIUtils.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/utils/QuakeAPIUtils.js" afterPath="$PROJECT_DIR$/dashboard/src/utils/QuakeAPIUtils.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/utils/SettingsUtils.js" afterPath="$PROJECT_DIR$/dashboard/src/utils/SettingsUtils.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/utils/WeatherAPIUtils.js" afterPath="$PROJECT_DIR$/dashboard/src/utils/WeatherAPIUtils.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/dashboard/yarn.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="d999fd0b-5dd6-4a1c-821b-8ec5c93c7a9a" name="Default" comment="Added docker-compose&#10;Various changes for the app&#10;TODO:&#10;Move node app to nginx&#10;Move twitter thing to nginx proxy" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -91,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="63">
-              <caret line="3" column="65" lean-forward="false" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
+              <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -276,7 +216,6 @@
         <option value="$PROJECT_DIR$/src/components/DashboardHome.react.js" />
         <option value="$PROJECT_DIR$/src/components/WeatherDisplay.react.js" />
         <option value="$PROJECT_DIR$/src/utils/WeatherAPIUtils.js" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/.gitmodules" />
         <option value="$PROJECT_DIR$/dashboard/Dockerfile" />
@@ -292,6 +231,7 @@
         <option value="$PROJECT_DIR$/dashboard/src/utils/CalendarAPIUtils.js" />
         <option value="$PROJECT_DIR$/dashboard/src/components/CalendarEventItem.react.js" />
         <option value="$PROJECT_DIR$/dashboard/src/components/DashboardHome.react.js" />
+        <option value="$PROJECT_DIR$/.env" />
       </list>
     </option>
   </component>
@@ -416,21 +356,22 @@
       <option name="presentableId" value="Default" />
       <updated>1512026554450</updated>
       <workItem from="1512026556377" duration="2827000" />
-      <workItem from="1512419272091" duration="5677000" />
+      <workItem from="1512419272091" duration="5914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8504000" />
+    <option name="totallyTimeSpent" value="8741000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.517194" sideWeight="0.50277996" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3122421" sideWeight="0.49722" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32168388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -880,7 +821,7 @@
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
-          <caret line="3" column="65" lean-forward="false" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
           <folding />
         </state>
       </provider>
