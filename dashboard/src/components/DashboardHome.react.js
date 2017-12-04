@@ -5,13 +5,13 @@ import DateTimeDisplay from './DateTimeDisplay.react';
 import WeatherDisplay from './WeatherDisplay.react';
 import CalendarDisplay from './CalendarDisplay.react';
 import NewsDisplay from './NewsDisplay.react';
-import QuakeDisplay from './QuakeDisplay';
+// import QuakeDisplay from './QuakeDisplay';
 
 //  The API utils
 import WeatherAPIUtils from '../utils/WeatherAPIUtils';
 import CalendarAPIUtils from '../utils/CalendarAPIUtils';
 import NewsAPIUtils from '../utils/NewsAPIUtils';
-import QuakeAPIUtils from '../utils/QuakeAPIUtils';
+// import QuakeAPIUtils from '../utils/QuakeAPIUtils';
 
 //  The stores
 import WeatherStore from '../stores/WeatherStore';
@@ -29,7 +29,8 @@ class DashboardHome extends Component {
         this.state = {
             weather: WeatherStore.getWeather(),
             weatherupdated: WeatherStore.getLastUpdateTime(),
-            pollen: WeatherStore.getPollen(),
+            // pollen: WeatherStore.getPollen(),
+            pollen: {},
             calendarinfo: CalendarStore.getCalendarData(),
             calendarupdated: CalendarStore.getLastUpdateTime(),
             news: NewsStore.getBreakingNews(),
@@ -37,7 +38,8 @@ class DashboardHome extends Component {
             cal_authcheckfinished: CalendarStore.authCheckFinished(),
             cal_authorized: CalendarStore.areAuthorized(),
             location_name: LocationInfoStore.getLocationName(),
-            quakes: QuakeInfoStore.getQuakeInfo()
+            // quakes: QuakeInfoStore.getQuakeInfo(),
+            quakes: {},
         };
 
         //  Bind our event handlers:
@@ -60,7 +62,7 @@ class DashboardHome extends Component {
         }
 
         //  Get the latest pollen
-        WeatherAPIUtils.getPollen(this.state.settings.zipcode);
+        // WeatherAPIUtils.getPollen(this.state.settings.zipcode);
 
         //  Get the latest calendar information if the API is loaded, 
         //  we're authorized, and we have a calendar selected:
@@ -72,7 +74,7 @@ class DashboardHome extends Component {
         NewsAPIUtils.getTwitterFeed(this.state.settings.newsuser);
 
         //  Get quake information:
-        QuakeAPIUtils.getQuakeList();
+        // QuakeAPIUtils.getQuakeList();
     }
 
     componentDidMount() {
@@ -84,7 +86,7 @@ class DashboardHome extends Component {
         this.calendarListener = CalendarStore.addListener(this._onChange);
         this.newsListener = NewsStore.addListener(this._onChange);
         this.locationListener = LocationInfoStore.addListener(this._onChange);
-        this.quakeListener = QuakeInfoStore.addListener(this._onChange);
+        // this.quakeListener = QuakeInfoStore.addListener(this._onChange);
     }
 
     componentWillUnmount() {
@@ -96,7 +98,7 @@ class DashboardHome extends Component {
         this.calendarListener.remove();
         this.newsListener.remove();
         this.locationListener.remove();
-        this.quakeListener.remove();
+        // this.quakeListener.remove();
     }
 
     render() {
@@ -126,14 +128,16 @@ class DashboardHome extends Component {
     _onChange() {
         this.setState({
             weather: WeatherStore.getWeather(),
-            pollen: WeatherStore.getPollen(),
+            // pollen: WeatherStore.getPollen(),
+            pollen: {},
             calendarinfo: CalendarStore.getCalendarData(),
             news: NewsStore.getBreakingNews(),
             settings: SettingsStore.getSettings(),
             cal_authcheckfinished: CalendarStore.authCheckFinished(),
             cal_authorized: CalendarStore.areAuthorized(),
             location_name: LocationInfoStore.getLocationName(),
-            quakes: QuakeInfoStore.getQuakeInfo()
+            // quakes: QuakeInfoStore.getQuakeInfo(),
+            quakes: {},
         });
     }
 

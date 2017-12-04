@@ -13,7 +13,7 @@ class SettingsStore extends Store {
 		this.settings.weathersource_apikey = "";
 		this.settings.calendarid = "";
 		this.settings.zipcode = "";
-		this.settings.newsuser = "cnnbrk";
+		this.settings.newsuser = "bbcbreaking";
 		this.settings.locationsource = "browser";
 		this.settings.locationsource_staticlocation = "";
 	}

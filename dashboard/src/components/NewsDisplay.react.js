@@ -21,7 +21,7 @@ class NewsDisplay extends Component{
     }    
 
     //  Clean up the text (remove the links - both http and https)
-    var newsText = newsItem.text;
+    var newsText = newsItem.Text;
     if(newsText.indexOf("http"))
     {
       newsText = newsText.substring(0, newsText.indexOf("http"));
@@ -33,7 +33,7 @@ class NewsDisplay extends Component{
   	return (
         <div id='breaking-news'>
           <div id='breaking-wrapper'>
-            <img id='breaking-news-image' alt="" src={newsItem.url} />
+            <img id='breaking-news-image' alt="" src={newsItem.MediaUrl} />
             <div id='breaking-news-caption-wrapper'>
               <div id='breaking-news-caption'><span id='breaking-news-caption-intro'>{newsText}</span> {formattedTime}</div>
             </div>

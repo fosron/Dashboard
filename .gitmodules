@@ -1,0 +1,3 @@
+[submodule "twitter-breaking-news"]
+	path = twitter-breaking-news
+	url = https://github.com/fosron/twitter-breaking-news

@@ -69,10 +69,10 @@ class DashboardSettings extends Component {
     }
     */
 
-      let authButton = {};
+    /*  let authButton = {};
       if (this.state.auth_check_complete && !this.state.authorized) {
           authButton = <button className="btn btn-default" onClick={this.handleAuth}>Authorize</button>;
-      }
+      }*/
 
     return (
       <div className="container">
@@ -108,10 +108,10 @@ class DashboardSettings extends Component {
                 </div>
               </div>
 
-              <div className="form-group">
-                <label htmlFor="zipcode">Zipcode for pollen information</label>
-                <input id="zipcode" value={this.state.settings.zipcode} onChange={this._onZipcodeChange} type="text" className="form-control" placeholder="Enter zipcode" />
-              </div>
+              {/*<div className="form-group">*/}
+                {/*<label htmlFor="zipcode">Zipcode for pollen information</label>*/}
+                {/*<input id="zipcode" value={this.state.settings.zipcode} onChange={this._onZipcodeChange} type="text" className="form-control" placeholder="Enter zipcode" />*/}
+              {/*</div>*/}
 
               <div className="form-group">
                 <label>Location data</label>
@@ -146,7 +146,7 @@ class DashboardSettings extends Component {
 
     //  Update the calendar data / pollen data:
     CalendarAPIUtils.getCalendarEvents(this.state.settings.calendarid);
-    WeatherAPIUtils.getPollen(this.state.settings.zipcode);
+    // WeatherAPIUtils.getPollen(this.state.settings.zipcode);
 
     //  Update the weather data
     switch (this.state.settings.weathersource) {

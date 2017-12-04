@@ -8,7 +8,8 @@ class DateTimeDisplay extends Component{
 
     this.state = {
       currentDate: Moment().format("dddd, MMMM Do"),
-      currentTime: Moment().format("h:mma")
+      // currentTime: Moment().format("H:mm"),
+      currentTime: Moment().format("H:mm")
     };
 
     //  Bind our event handlers:
@@ -18,7 +19,8 @@ class DateTimeDisplay extends Component{
   tick() {
     this.setState({
       currentDate: Moment().format("dddd, MMMM Do"),
-      currentTime: Moment().format("h:mma")
+      // currentTime: Moment().format("H:mm"),
+      currentTime: Moment().format("H:mm"),
     });
   }
 

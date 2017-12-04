@@ -15,10 +15,15 @@ class CalendarEventItem extends Component{
       eventEnd = " - " + Moment(this.props.eventinfo.end.dateTime).format("h:mma");
     }
 
+    let day = "";
+    if (this.props.eventinfo.start.date != null) {
+        day = Moment(this.props.eventinfo.start.date).format("dddd (Do)") + " ";
+    }
+
     var summary = this.props.eventinfo.summary;
 
   	return (
-        <tr><td>{eventStart}{eventEnd}</td><td>{summary}</td></tr>
+        <tr><td>{day}{eventStart}{eventEnd}</td><td>{summary}</td></tr>
     );
   }
 }

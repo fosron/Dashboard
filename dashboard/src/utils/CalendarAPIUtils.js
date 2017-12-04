@@ -17,7 +17,7 @@ class CalendarAPIUtils {
 
         // Your Client ID and API key can be retrieved from your project in the Google
         // Developer Console, https://console.developers.google.com
-        this.client_id = '576499236319-438cg0cliltb3qcu8nrn2mrers6eobh2.apps.googleusercontent.com';
+        this.client_id = '440080846642-ab1hfqn6pjghpjv42lfmcrb0pg8okkv5.apps.googleusercontent.com';
         this.scopes = ["https://www.googleapis.com/auth/calendar.readonly"];
     }
 
@@ -44,7 +44,7 @@ class CalendarAPIUtils {
 
         //  Set the min/max times for event display:
         let timeMin = (new Date()).toISOString();
-        let tempTime = moment().endOf('day').toDate();
+        let tempTime = moment().endOf('week').toDate();
         let timeMax = tempTime.toISOString();
 
         //  Create the request

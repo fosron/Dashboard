@@ -9,7 +9,7 @@ import CalendarAPIUtils from './utils/CalendarAPIUtils';
 import NewsAPIUtils from './utils/NewsAPIUtils';
 import SettingsUtils from './utils/SettingsUtils';
 import LocationAPIUtils from './utils/LocationAPIUtils';
-import QuakeAPIUtils from './utils/QuakeAPIUtils';
+// import QuakeAPIUtils from './utils/QuakeAPIUtils';
 
 //  The stores
 import SettingsStore from './stores/SettingsStore';
@@ -35,7 +35,7 @@ LocationAPIUtils.getCurrentLocation({
         
         //  Get the calendarId and zipcode from cookies:
         let calendarId = settings.calendarid;
-        let zipcode = settings.zipcode;
+        // let zipcode = settings.zipcode;
 
         //  We have coordinates -- get the weather data
         switch(settings.weathersource)
@@ -52,12 +52,12 @@ LocationAPIUtils.getCurrentLocation({
         }
 
         //  If we have a zipcode, get pollen data:
-        if(zipcode){
-            WeatherAPIUtils.getPollen(zipcode);
-        }
+        // if(zipcode){
+            // WeatherAPIUtils.getPollen(zipcode);
+        // }
 
         //  If we don't have one or more pieces of information, show the settings page:
-        if(!(calendarId && zipcode)) {
+        if(!(calendarId)) {
             window.location.hash ="#/settings";
         }
 
@@ -66,7 +66,7 @@ LocationAPIUtils.getCurrentLocation({
         NewsAPIUtils.getTwitterFeed(newsUser)
 
         //  Get quake information:
-        QuakeAPIUtils.getQuakeList();
+        // QuakeAPIUtils.getQuakeList();
 
         //  Start the app
         ReactDOM.render(<App coords={coords} />, document.getElementById('root'));

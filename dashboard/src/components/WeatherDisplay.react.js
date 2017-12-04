@@ -26,10 +26,10 @@ class WeatherDisplay extends Component {
     let formattedSunrise = "";
     let sunset = 0;
     let formattedSunset = "";
-    let pollendays = [];
+    // let pollendays = [];
     let formattedHumidity = "";
     let formattedStatus = "";
-    let pollenSummary = "";
+    // let pollenSummary = "";
     let winddirectionicon = "";
 
     if (this.props.weather.currently) {
@@ -69,7 +69,7 @@ class WeatherDisplay extends Component {
       winddirectionicon = WeatherAPIUtils.getWindDirectionIcon(this.props.weather.currently.wind_direction);
 
       //  Set pollen information
-      if (this.props.pollen.PollenCount) {
+     /* if (this.props.pollen.PollenCount) {
         pollendays = this.props.pollen.PollenCount;
 
         //  Add the pollen data to the forecastdays
@@ -78,8 +78,8 @@ class WeatherDisplay extends Component {
         };
 
         //  Set the pollen summary:
-        pollenSummary = this.props.pollen.PredominantPollen;
-      }
+        // pollenSummary = this.props.pollen.PredominantPollen;
+      }*/
     }
 
     return (
@@ -88,7 +88,7 @@ class WeatherDisplay extends Component {
         <div id="temp" style={{ color: tempColor }}><WeatherForecastIcon icon={forecasticon} /> {temperature}&deg;</div>
 
         <div id="extended-summary">
-          Wind: <i className={winddirectionicon}/> {windspeed}mph • {formattedHumidity} humidity • <span style={feelsLikeStyles}>Feels like: {feelslike} &deg;</span>
+          Wind: <i className={winddirectionicon}/> {windspeed} km/h • {formattedHumidity} humidity • <span style={feelsLikeStyles}>Feels like: {feelslike} &deg;</span>
         </div>
         <div id="sunrise-sunset">
           <i className="wi wi-horizon"></i> {formattedSunrise} / <i className="wi wi-night-clear"></i> {formattedSunset}

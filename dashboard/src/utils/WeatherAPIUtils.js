@@ -17,7 +17,7 @@ class WeatherAPIUtils {
         let apikey = settings.weathersource_apikey;
 
         //  Get the weather for the given lat/long coordinates
-        let url = `https://api.darksky.net/forecast/${apikey}/${latitude},${longitude}`;
+        let url = `https://api.darksky.net/forecast/${apikey}/${latitude},${longitude}?units=auto`;
         let weatherUtils = this;
 
         fetchJsonp(url)
